@@ -13,3 +13,4 @@ int main(){
     cout << fixed << setprecision(2) << resultum;
     return 0;
 }
+// 欢迎扫描repos里的二维码赞助我
