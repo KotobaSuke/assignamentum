@@ -13,4 +13,4 @@ int main(){
     // setfill(char)函数和setw()配合使用，当输出的字符串长度不够时，用相应的字符char填充（本例为'0'）
     return 0;
 }
-// 欢迎扫描repos里的二维码赞助我
+// 欢迎扫描repo里的二维码赞助我
