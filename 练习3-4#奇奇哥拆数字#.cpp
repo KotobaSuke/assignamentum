@@ -27,6 +27,13 @@ int main(){
     // 在字符串后使用.insert(int, char)，表示在第int个（本例为3）字符后面插入相应的字符char（本例为空格）
         // 如 string ln = "ABCDEFG"，操作ln.(3, 'X')表示在第三个字符（'C'）后插入字符'X'，即得到"ABCXDEFG"
     
+                //方法三   另类做法（不推荐）
+    char tx;
+    for(int index = -1; index <= 4; index++){
+        putchar(tx = getchar());
+        if (index) cout << " ";
+    }
+    
     return 0;
 }
 // 欢迎扫描repo里的二维码赞助我
