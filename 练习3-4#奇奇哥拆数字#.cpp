@@ -28,12 +28,9 @@ int main(){
         // 如 string ln = "ABCDEFG"，操作ln.(3, 'X')表示在第三个字符（'C'）后插入字符'X'，即得到"ABCXDEFG"
     
                 //方法三   另类做法（不推荐）
-    char tx;
-    for(int index = -1; index <= 4; index++){
-        putchar(tx = getchar());
-        if (index) cout << " ";
-    }
     
+    for(int index = -3; index <= 3; index++) putchar(index ? getchar() : ' ');
+  
     return 0;
 }
 // 欢迎扫描repo里的二维码赞助我
