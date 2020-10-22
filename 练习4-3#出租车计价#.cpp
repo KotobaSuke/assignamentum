@@ -12,5 +12,13 @@ int main(){
     oppr = (tmp / 5) * 2; // 等待花费，每5 min花费2，因为tmp是整型，所以(tmp / 5)会自动向下取整
     cout << int(pret + 0.5) + oppr; // pret四舍五入后取整
     return 0;
+    
+    /* 压缩版
+        double dist;
+        int tmp;
+        cin >> dist >> tmp;
+        cout << int((dist <= 3 ? 10 : (dist <= 10 ? 10 + 2 * (dist - 3) : 24 + 3 * (dist - 10))) + 0.5) + (tmp / 5) * 2;
+        return 0;
+    /*
 }
 //欢迎扫描repo里的二维码赞助我
