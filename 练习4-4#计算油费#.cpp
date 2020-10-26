@@ -14,7 +14,7 @@ int main(){
         case 97: valor = 7.93; break;
     }
     if(opera == 'm') cout << fixed << setprecision(2) << (0.95 * valor * summa + 0.005);
-    else cout << fixed << setprecision(2) << int(100 * (0.97 * valor * summa + 0.005)) / 100.0;
+    else cout << fixed << setprecision(2) << (0.97 * valor * summa + 0.005);
     return 0;
     
     /*
