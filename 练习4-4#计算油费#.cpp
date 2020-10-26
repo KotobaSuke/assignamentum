@@ -30,7 +30,7 @@ int main(){
       int summa, genus;
       char opera;
       cin >> summa >> genus >> opera;
-      cout << fixed << setprecision(2) << int(100 * ((opera == 'm' ? 0.95 : 0.97) * (genus == 90 ? 6.95 : (genus == 93) ? 7.44 : 7.93) * summa + 0.005)) / 100.0;
+      cout << fixed << setprecision(2) << ((opera == 'm' ? 0.95 : 0.97) * (genus == 90 ? 6.95 : (genus == 93) ? 7.44 : 7.93) * summa + 0.005);
       return 0;
     */
 }
