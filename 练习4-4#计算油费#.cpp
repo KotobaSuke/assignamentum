@@ -13,8 +13,7 @@ int main(){
         case 93: valor = 7.44; break;
         case 97: valor = 7.93; break;
     }
-    if(opera == 'm') cout << fixed << setprecision(2) << int(100 * (0.95 * valor * summa + 0.005)) / 100.0;
-    // 因为要四舍五入保留两位小数，不能只用fixed和setprecision(2)，这样会向下取整而不是四舍五入
+    if(opera == 'm') cout << fixed << setprecision(2) << (0.95 * valor * summa + 0.005);
     else cout << fixed << setprecision(2) << int(100 * (0.97 * valor * summa + 0.005)) / 100.0;
     return 0;
     
