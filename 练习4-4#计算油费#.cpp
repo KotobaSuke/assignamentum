@@ -14,7 +14,7 @@ int main(){
         case 97: valor = 7.93; break;
     }
     if(opera == 'm') cout << fixed << setprecision(2) << int(100 * (0.95 * valor * summa + 0.005)) / 100.0;
-    // 因为要四舍五入保留两位小数，只用fixed和setprecision(2)会产生浮点精度问题，见篇末注释【*】
+    // 因为要四舍五入保留两位小数，只用fixed和setprecision(2)会产生浮点精度问题，见篇末注释【*】，但是题目可能会设置有精度误差的容错，根据情况决定
     else cout << fixed << setprecision(2) << int(100 * (0.97 * valor * summa + 0.005)) / 100.0;
     return 0;
     
