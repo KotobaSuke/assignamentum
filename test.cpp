@@ -28,6 +28,7 @@ int main(){
     menu();
 }
 
+
 void menu(){
     printf("\nENTER A NUMBER TO SELECT A FUNCTION:\n");
     printf("____________________________________\n");
@@ -66,16 +67,10 @@ void create(){
     int ind = 0;
     int cntr = 0;
     for(;; cntr++){
-        getline(cin, ipt);
+        cin >> ws >> ipt;
         if(ipt == "END") break;
         for(ind = 0; ind < ipt.size() && ipt[ind] != ','; ind++) numS += ipt[ind];
-        try{
-            idC = stoi(numS);
-        }
-        catch(...){
-            cout << idC;
-        }
-        //idC = stoi(numS);
+        idC = stoi(numS);
         numS = "";
         allS[idC].idNum = idC;
         ind++;
@@ -89,7 +84,7 @@ void create(){
             numS = "";
         }
     }
-    printf("Data of %d student(s) is successfully imported", cntr);
+    printf("Data of %d student(s) is successfully imported\n\n", cntr);
     menu();
 }
 
@@ -99,7 +94,7 @@ void displayOne(int id){
         menu();
     }
     printf("ID   NAME             GENDER  MATHS  PROG.  ENGL.\n");
-    printf("%d %16s %s       %3d     %3d     %3d", 
+    printf("%d %16s  %s      %3d   %3d     %3d\n", 
         allS[id].idNum, allS[id].name, (allS[id].gender ? "F" : "M"), 
         allS[id].scores[0], allS[id].scores[1], allS[id].scores[2]);
     
